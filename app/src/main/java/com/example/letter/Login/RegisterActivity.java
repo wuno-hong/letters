@@ -81,7 +81,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         String nickname = et_nickname.getText().toString();
         String description = et_description.getText().toString();
 
-        //test
         switch (v.getId()) {
             case R.id.bt_get_code:
                 asyncGetCode(email);

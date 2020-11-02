@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_email"
+        android:icon="@drawable/letter_center"
+        android:title="@string/title_email" />
+
+    <item
+        android:id="@+id/navigation_information"
+        android:icon="@drawable/me"
+        android:title="@string/title_personal_information" />
+
+
+</menu>

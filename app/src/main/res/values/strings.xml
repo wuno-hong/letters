@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">三日传书</string>
+    <string name="iv_project_icon">项目图标</string>
+    <string name="email">邮箱</string>
+    <string name="please_input_email">请输入邮箱</string>
+    <string name="password">密码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="register">注册</string>
+    <string name="user_register">用户注册</string>
+    <string name="commit_register">提交注册</string>
+    <string name="code">验证码</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="title_email">信件</string>
+    <string name="title_personal_information">我</string>
+    <string name="write_letter">写信</string>
+    <string name="get_letter">收信</string>
+    <string name="send_letter">发送信件</string>
+    <string name="my_information">我的信息</string>
+    <string name="pen_pal_information">笔友信息</string>
+    <string name="nickname">昵称</string>
+    <string name="description">简介</string>
+    <string name="change_information">修改信息</string>
+    <string name="tv_username">Hong</string>
+    <string name="tv_user_description">他们用自我的所有精力和人生去实现他们追求的。他们用自我的亲身经历告诉我们能够将一件事做好，其实已经实现了自我的价值。而我们此刻所就应做的，就是做好一件小事，在小事中认真，才能去完成那些关乎一生的大事。</string>
+</resources>

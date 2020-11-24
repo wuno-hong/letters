@@ -2,7 +2,7 @@ package com.example.letter.constant;
 
 public class NetConstant {
 
-    private static String baseURL = "http://192.168.43.145:8081";
+    private static String baseURL = "http://192.168.43.5:8081";
     private static String codeURL = baseURL + "/getVfCode";
     private static String registerURL = baseURL + "/register";
     private static String loginURL = baseURL + "/login";

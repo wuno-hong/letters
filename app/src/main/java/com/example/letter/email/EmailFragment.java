@@ -1,7 +1,9 @@
 package com.example.letter.email;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.DocumentsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +32,7 @@ public class EmailFragment extends Fragment implements View.OnClickListener {
         super.onActivityCreated(savedInstance);
         initUI();
         setOnClickListener();
+        createFile();
     }
 
     private void initUI() {
@@ -54,4 +57,26 @@ public class EmailFragment extends Fragment implements View.OnClickListener {
         }
     }
 
+    // Request code for creating a PDF document.
+    private static final int CREATE_FILE = 1;
+
+    private void createFile() {
+        Intent intent = new Intent(Intent.ACTION_CREATE_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("application/doc");
+        intent.putExtra(Intent.EXTRA_TITLE, "invoice.doc");
+        intent.putExtra(DocumentsContract.EXTRA_INITIAL_URI, "content://sdcard");
+
+        startActivityForResult(intent, CREATE_FILE);
+    }
+
+    private static final int PICK_PDF_FILE = 2;
+
+    private void openFile() {
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("application/pdf");
+
+        startActivityForResult(intent, PICK_PDF_FILE);
+    }
 }

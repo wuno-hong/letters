@@ -55,8 +55,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
         initUI();
         setOnClickListener();
-        setOnFocusChangeErrMsg(et_email, "email", "邮箱格式不正确");
-        setOnFocusChangeErrMsg(et_password, "password", "密码至少为六位");
     }
 
     private void initUI() {
@@ -89,30 +87,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    private void setOnFocusChangeErrMsg(final EditText editText, final String inputType, final String errMsg) {
-        editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                String inputStr = editText.getText().toString();
-                if (!hasFocus) {
-                    if (inputType.equals("email")) {
-                        if (isEmailValid(inputStr)) {
-                            editText.setError(null);
-                        } else {
-                            editText.setError(errMsg);
-                        }
-                    }
-                    if (inputType.equals("password")) {
-                        if (isPasswordValid(inputStr)) {
-                            editText.setError(null);
-                        } else {
-                            editText.setError(errMsg);
-                        }
-                    }
-                }
-            }
-        });
-    }
 
     private void asyncLogin(final String email, final String password) {
         if (!isEmailValid(email)) {

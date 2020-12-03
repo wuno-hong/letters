@@ -3,13 +3,13 @@
 
     <item
         android:id="@+id/navigation_email"
-        android:icon="@drawable/letter_center"
+        android:icon="@drawable/mail"
         android:title="@string/title_email" />
 
     <item
         android:id="@+id/navigation_information"
         android:icon="@drawable/me"
-        android:title="@string/title_personal_information" />
+        android:title="我" />
 
 
 </menu>

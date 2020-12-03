@@ -45,11 +45,12 @@ public class WriteLetterActivity extends AppCompatActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write_letter);
         initUI();
-        OnClickListener();
+        et_write_letter.requestFocus();
+        //OnClickListener();
     }
 
     private void initUI() {
-        bt_send_letter = findViewById(R.id.bt_send_letter);
+        //bt_send_letter = findViewById(R.id.bt_send_letter);
         et_write_letter = findViewById(R.id.et_write_letter);
     }
 
